@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime as dt
 
-NAS_URL = '/mnt/nfs_client/microk8s_datastore/pvc-2795435e-47a2-49d5-b6ed-5dd2b245cec4/events.xlsx'
+NAS_URL = '/mnt/nfs_client/microk8s_datastore/events.xlsx'
 
 def get_data():
     df = pd.read_excel(NAS_URL)

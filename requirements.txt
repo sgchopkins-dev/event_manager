@@ -1,2 +1,6 @@
 pandas
 openpyxl
+certifi
+rfc5424-logging-handler
+pretty_html_table
+
