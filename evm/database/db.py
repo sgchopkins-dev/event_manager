@@ -1,10 +1,11 @@
 import pandas as pd
 from datetime import datetime as dt
 
-NAS_URL = '/mnt/nfs_client/microk8s_datastore/events.xlsx'
+#NAS_URL = '/mnt/nfs_client/microk8s_datastore/events.xlsx'
+NAS_URL = '/mnt/nfs_client/microk8s_datastore/production_cluster/events.csv'
 
 def get_data():
-    df = pd.read_excel(NAS_URL)
+    df = pd.read_csv(NAS_URL)
     df = df[df['Active'] == True]
     return df
 
